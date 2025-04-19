@@ -122,10 +122,3 @@ De klassen bevat eveneens een aantal methods:
 
 - **PrintInService():** geeft eigenschap FullName() uit klasse Person + "is in dienst sinds: " + InService (kort datumnotatie)
 - **PrintAddress():** geeft FullName() uit klasse Person + Straat + Postcode
-- Over te erven **ToString():** Geeft bij Statuut = FT onderstaande boodschap
-
-> ![](./media/image14.png)
-
-en bij Statuut = DT de volgende boodschap:
-
-> ![](./media/image15.png)
