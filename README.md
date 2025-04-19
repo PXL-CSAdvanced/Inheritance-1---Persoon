@@ -56,6 +56,7 @@ In de lege constructor **Person()** kan je je persoonlijke gegevens toekennen. H
 
 **Klasse Validator**
 
+
 Deze statische klasse bevat 2 methods om te testen of het tekstvak EmailTextBox niet leeg is/correct is vooraleer je het e-mailadres doorgeeft aan de eigenschap Email uit de klasse Person.
 
 De booleaanse functiemethod **IsPresent(tekstvak)** controleert of het tekstvak niet leeg is. Geeft *False* wanneer het tekstvak leeg is en *True* wanneer er gegevens zijn.
@@ -66,14 +67,17 @@ De booleaanse functiemethod **IsValidEmail(tekstvak)** controleert of er in de g
 
 **Klasse FileImport**
 
+
 Deze statische klasse bevat 2 functiemethoden die beiden een List teruggeven.
 
 **ReadLector(string fileName)** leest het bestand *lectoren*.*csv* in en geeft een List\<Lector\> terug.
+
 **ReadStudent(string fileName)** leest het bestand *studenten*.*csv* in en geeft een List\<Student\> terug.
 
-Voor beide methdos geldt dat je er een FileNotFoundException wordt gegenereerd wanneer het bestand niet bestaat.
+Voor beide methods geldt dat je er een FileNotFoundException wordt gegenereerd wanneer het bestand niet bestaat.
 
 **Klasse Student**
+
 
 De klasse bevat bijkomende eigenschappen:
 - StartDate: huidige dag
