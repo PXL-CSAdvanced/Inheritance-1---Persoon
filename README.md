@@ -60,6 +60,7 @@ In de lege constructor **Person()** kan je je persoonlijke gegevens toekennen. H
 Deze statische klasse bevat 2 methods om te testen of het tekstvak EmailTextBox niet leeg is/correct is vooraleer je het e-mailadres doorgeeft aan de eigenschap Email uit de klasse Person.
 
 De booleaanse functiemethod **IsPresent(tekstvak)** controleert of het tekstvak niet leeg is. Geeft *False* wanneer het tekstvak leeg is en *True* wanneer er gegevens zijn.
+
 De booleaanse functiemethod **IsValidEmail(tekstvak)** controleert of er in de gegevens een '@' en '.' aanwezig. Geeft *False* wanneer het e-mailadres foutief is en *True* wanneer het e-mailadres correct is.
 
 ![](./media/image8.png)
@@ -95,7 +96,7 @@ De klasse bevat eveneens een aantal methods:
 ![](./media/image10.png)
 
 - **PrintStartdate():** geeft eigenschap FullName() uit klasse Person + Startdatum
-- **AfdrukAdres():** geeft FullName() uit klasse Person + Straat + Postcode
+- **PrintAddress():** geeft FullName() uit klasse Person + Straat + Postcode
 - Over te erven **ToString():** Geeft bij StudentType = I onderstaande boodschap
 
 > ![](./media/image11.png)
