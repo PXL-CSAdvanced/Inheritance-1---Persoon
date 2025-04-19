@@ -68,9 +68,10 @@ De booleaanse functiemethod **IsValidEmail(tekstvak)** controleert of er in de g
 
 Deze statische klasse bevat 2 functiemethoden die beiden een List teruggeven.
 
-**ReadLector()** leest het bestand *lectoren*.*csv* in en geeft een List\<Lector\> terug.
+**ReadLector(string fileName)** leest het bestand *lectoren*.*csv* in en geeft een List\<Lector\> terug.
+**ReadStudent(string fileName)** leest het bestand *studenten*.*csv* in en geeft een List\<Student\> terug.
 
-**ReadStudent()** leest het bestand *studenten*.*csv* in en geeft een List\<Student\> terug.
+Voor beide methdos geldt dat je er een FileNotFoundException wordt gegenereerd wanneer het bestand niet bestaat.
 
 **Klasse Student**
 
