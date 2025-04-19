@@ -30,7 +30,7 @@ public partial class MainWindow : Window
             List<Student> studenten = FileImport.ReadStudent(@"..\..\..\Bestanden\Studenten.csv");
             foreach (var student in studenten)
             {
-                InfoListBox.Items.Add(student.ToString());
+                InfoListBox.Items.Add(student);
             }
         }
         catch (Exception)
@@ -52,7 +52,7 @@ public partial class MainWindow : Window
             List<Lector> lectoren = FileImport.ReadLector(@"..\..\..\Bestanden\Lectoren.csv");
             foreach (var lector in lectoren)
             {
-                InfoListBox.Items.Add(lector.Data);
+                InfoListBox.Items.Add(lector);
             }
         }
         catch (Exception)
@@ -70,7 +70,15 @@ public partial class MainWindow : Window
         // Alle gegevens van de persoon zitten in de constructor maar 
         // enkel het e­mailadres moet uit het tekstvak opgehaald worden.
         // Controle
-        if (Validator.IsPresent(EmailTextBox.Text) && Validator.IsValidEmail(EmailTextBox.Text))
+        if (!Validator.IsPresent(EmailTextBox.Text))
+        {
+            MessageBox.Show("Email moet ingevuld worden!", "Foutmelding");
+        }
+        else if (!Validator.IsValidEmail(EmailTextBox.Text))
+        {
+            MessageBox.Show("Email moet een geldig email adres zijn!", "Foutmelding");
+        }
+        else
         {
             persoon.Email = EmailTextBox.Text;
             MessageBox.Show(persoon.Info(),
@@ -83,5 +91,14 @@ public partial class MainWindow : Window
     private void EmailTextBox_GotFocus(object sender, RoutedEventArgs e)
     {
         EmailTextBox.Text = string.Empty;
+    }
+
+    private void InfoListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        Person selectedPerson = ((Person)InfoListBox.SelectedItem);
+        if (selectedPerson is not null)
+        {
+            MessageBox.Show(selectedPerson.Info(), selectedPerson.InfoHeader, MessageBoxButton.OK, MessageBoxImage.Information);
+        }
     }
 }

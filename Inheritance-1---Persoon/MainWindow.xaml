@@ -21,6 +21,6 @@
         <Button Grid.Row="0" Grid.Column="1" x:Name="LectorButton" Margin="5" Content="Lector" Click="LectorButton_Click" />
         <Button Grid.Row="0" Grid.Column="2" x:Name="PersonButton" Margin="5" Content="Persoon" Click="PersonButton_Click" />
         <TextBox Grid.Row="0" Grid.Column="3" x:Name="EmailTextBox" Margin="5" VerticalContentAlignment="Center" Text="E-mail voor klasse Persoon" GotFocus="EmailTextBox_GotFocus" />
-        <ListBox Grid.Row="1" Grid.ColumnSpan="4" x:Name="InfoListBox" Margin="10"/>
+        <ListBox Grid.Row="1" Grid.ColumnSpan="4" x:Name="InfoListBox" Margin="10" SelectionChanged="InfoListBox_SelectionChanged"/>
     </Grid>
 </Window>

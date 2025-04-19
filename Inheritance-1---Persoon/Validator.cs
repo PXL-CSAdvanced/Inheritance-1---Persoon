@@ -8,11 +8,8 @@ namespace Inheritance_1___Persoon
 {
     public static class Validator
     {
-        // Eigenschap wordt onmiddellijk gedeclareerd.
         public static string Title { get; set; } = "Foutmelding";
-
         public static bool IsPresent(string text) => (text != string.Empty);
-
         public static bool IsValidEmail(string text) => (text.IndexOf("@") != -1 && text.IndexOf(".") != -1);
     }
 }

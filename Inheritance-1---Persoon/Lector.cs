@@ -9,15 +9,17 @@ namespace Inheritance_1___Persoon
 {
     public class Lector : Person
     {
+        public string Statute { get; set; }
         private string department;
         public string Department
         {
             get { return department; }
             set { department = DepartmentName(value); }
         }
-        public override string Data => $"{FullName()} - {Statute} - {Department}";
         public DateTime InService { get; set; }
-        public string Statute { get; set; }
+        public override string Data => $"{FullName()} - {Statute} - {Department}";
+        public override string Info()
+            => $"Gegevens van de lector: {AfdrukIndienst()}";
 
         private string DepartmentName(string dept)
         {
@@ -37,13 +39,14 @@ namespace Inheritance_1___Persoon
 
         public string PrintAddress() => $"{FullName()}  {Street} {ZipCode}";
         public string AfdrukIndienst() => $"{FullName()} is in dienst sinds: {InService.ToShortDateString()}";
-        protected override string InfoHeader => "Gegevens van de lector:\r\n\r\n";
+        public override string InfoHeader => "Info lector";
 
         public Lector() : base()
         {
         }
 
         public override string ToString()
-            => (Statute.Equals("DT")) ? "Lector is deeltijds actief" : "Lector is voltijds actief";
+            //=> (Statute.Equals("DT")) ? "Lector is deeltijds actief" : "Lector is voltijds actief";
+            => Data;
     }
 }

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Inheritance_1___Persoon.FileImport">
+    <Position X="2.25" Y="1" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FileImport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inheritance_1___Persoon.Lector">
+    <Position X="2.25" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEBAAASAAQEAAAABAAAQAAAAAgBAA=</HashCode>
+      <FileName>Lector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inheritance_1___Persoon.Person">
+    <Position X="6.25" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAIAAAAAAAAQAAAAAABABAAIAAEAgAAA=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inheritance_1___Persoon.Student">
+    <Position X="10" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAgAAAEBIAAIAAAACAAABAAAAAAAFCgAAA=</HashCode>
+      <FileName>Student.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inheritance_1___Persoon.Validator">
+    <Position X="6.25" Y="1" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Validator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -17,11 +17,18 @@ namespace Inheritance_1___Persoon
         public string Street { get; set; }
         public string FirstName { get; set; }
 
-        protected virtual string InfoHeader => "Uw persoonlijke gegevens:\r\n\r\n";
+        public virtual string InfoHeader => "Uw persoonlijke gegevens:\r\n\r\n";
 
-        public string Info()
+        public virtual string Info()
             => $"{InfoHeader}Naam: {FirstName} {Name}\r\n" +
             $"Adres: {Street} {ZipCode}\r\nGeboortedatum: {BirthDate.ToLongDateString()}\r\nE-mail: {Email}";
+        
+        //public void Info() => System.Windows.MessageBox.Show(
+        //            $"{InfoHeader}Naam: {Voornaam} {Naam}\r\n" +
+        //            $"Adres: {Straat} {Postcode}\r\nGeboortedatum: {Geboortedatum.ToLongDateString()}\r\nE-mail: {Email}",
+        //            "Info Klasse Persoon",
+        //            System.Windows.MessageBoxButton.OK,
+        //            System.Windows.MessageBoxImage.Information);
 
         public Person()
         {
@@ -32,12 +39,6 @@ namespace Inheritance_1___Persoon
             BirthDate = new DateTime(1992, 1, 12);
         }
 
-        //public void Info() => System.Windows.MessageBox.Show(
-        //            $"{InfoHeader}Naam: {Voornaam} {Naam}\r\n" +
-        //            $"Adres: {Straat} {Postcode}\r\nGeboortedatum: {Geboortedatum.ToLongDateString()}\r\nE-mail: {Email}",
-        //            "Info Klasse Persoon",
-        //            System.Windows.MessageBoxButton.OK,
-        //            System.Windows.MessageBoxImage.Information);
         public string FullName() => $"{FirstName} {Name}";
     }
 }
